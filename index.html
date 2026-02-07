@@ -79,7 +79,7 @@
         <span class="param">self</span>.name = <span class="str">"Alexander Qin"</span>
         <span class="param">self</span>.role = <span class="str">"Full-Stack Engineer"</span>
         <span class="param">self</span>.languages = [
-            <span class="str">"Python"</span>, <span class="str">"JavaScript"</span>,
+            <span class="str">"Python"</span>, <span class="str">"C++"</span>,
             <span class="str">"TypeScript"</span>, <span class="str">"SQL"</span>
         ]
         <span class="param">self</span>.passion = <span class="str">"Building AI-powered apps"</span>
@@ -90,9 +90,9 @@
                         <span class="str">"Celery"</span>, <span class="str">"Redis"</span>],
             <span class="str">"frontend"</span>: [<span class="str">"Svelte"</span>, <span class="str">"React"</span>,
                          <span class="str">"HTML/CSS"</span>],
-            <span class="str">"data"</span>: [<span class="str">"PostgreSQL"</span>,
-                     <span class="str">"Meilisearch"</span>],
-            <span class="str">"devops"</span>: [<span class="str">"Docker"</span>, <span class="str">"CI/CD"</span>,
+            <span class="str">"ml"</span>: [<span class="str">"PyTorch"</span>, <span class="str">"TensorFlow"</span>,
+                   <span class="str">"HuggingFace"</span>],
+            <span class="str">"devops"</span>: [<span class="str">"Docker"</span>, <span class="str">"AWS"</span>,
                        <span class="str">"GitHub Actions"</span>]
         }</code></pre>
       </div>
@@ -113,9 +113,9 @@
             polished, interactive frontends.
           </p>
           <p>
-            I've contributed extensively to a Unified Communications Agent platform at
-            <strong>Opaida AI</strong>, shipping features across Slack, Outlook, Gmail, Jira,
-            and Microsoft Teams integrations. I've also independently built project management
+            I've contributed extensively to an AI chatting application at
+            <strong>Opaida AI</strong>, shipping features across multiple third-party integrations
+            and real-time communication systems. I've also independently built project management
             tools with AI-powered assistants, timeline views, and team collaboration features.
           </p>
           <p>
@@ -159,13 +159,13 @@
       <div class="project-card featured" data-animate="fade-up" data-delay="100">
         <div class="project-header">
           <div class="project-label">Featured Project</div>
-          <h3>Unified Communications Agent (UCA)</h3>
+          <h3>AI Chatting Application</h3>
         </div>
         <div class="project-body">
           <p>
             An AI-powered unified communications platform that aggregates messages from
-            Slack, Outlook, Gmail, Jira, and Microsoft Teams into a single intelligent inbox.
-            Features include AI-generated email drafts, smart search with Meilisearch,
+            multiple enterprise sources into a single intelligent inbox.
+            Features include AI-generated email drafts, smart search,
             priority classification, real-time SSE updates, conversation threading,
             calendar management, and a full agent system with tool-calling capabilities.
           </p>
@@ -175,10 +175,8 @@
               <li>Built inbox sorting, filtering, and pagination with two-level caching</li>
               <li>Implemented AI-powered email draft generation with configurable signatures</li>
               <li>Created adaptive classification system with Redis-backed timers</li>
-              <li>Developed Slack integration with threaded messages, replies, and emoji support</li>
-              <li>Built Outlook calendar sync with conflict detection and event management</li>
-              <li>Implemented Jira integration with real-time comments, attachments, and ticket creation</li>
-              <li>Designed Microsoft Teams connector with full chat support</li>
+              <li>Developed third-party integrations with threaded messages and real-time sync</li>
+              <li>Built calendar sync with conflict detection and event management</li>
               <li>Created comprehensive E2E testing infrastructure with Playwright</li>
               <li>Shipped 564 commits with 103K+ lines of code</li>
             </ul>
@@ -195,9 +193,7 @@
           <span class="tech-tag">Docker</span>
           <span class="tech-tag">Playwright</span>
           <span class="tech-tag">SSE</span>
-          <span class="tech-tag">Microsoft Graph API</span>
-          <span class="tech-tag">Slack API</span>
-          <span class="tech-tag">Jira API</span>
+          <span class="tech-tag">OAuth 2.0</span>
         </div>
       </div>
 
@@ -205,14 +201,14 @@
         <div class="project-card" data-animate="fade-up" data-delay="200">
           <div class="project-header">
             <div class="project-label">Full-Stack Application</div>
-            <h3>NavyTool</h3>
+            <h3>Real Estate Construction Planner</h3>
           </div>
           <div class="project-body">
             <p>
-              A specialized web application for Navy project management with AI-assisted
+              A specialized web application for real estate construction project planning with AI-assisted
               workflows. Features include task tracking with dependencies and priorities,
-              signature workflow management, document progress tracking, and an AI agent
-              chat powered by Groq (Llama 3.1) for intelligent assistance.
+              approval workflow management, document progress tracking, and an AI agent
+              chat for intelligent assistance.
             </p>
           </div>
           <div class="project-tech">
@@ -220,21 +216,20 @@
             <span class="tech-tag">Flask</span>
             <span class="tech-tag">Svelte</span>
             <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">Groq API</span>
-            <span class="tech-tag">Llama 3.1</span>
+            <span class="tech-tag">LLM Integration</span>
           </div>
         </div>
 
         <div class="project-card" data-animate="fade-up" data-delay="300">
           <div class="project-header">
             <div class="project-label">Full-Stack Application</div>
-            <h3>ProjectManagingTool</h3>
+            <h3>Jira Clone Application</h3>
           </div>
           <div class="project-body">
             <p>
               A comprehensive project management platform featuring timeline-based tracking,
-              phase and task management, team collaboration with role-based permissions
-              (PM, Lead, Member, Viewer), Discord-style chat channels for project discussions,
+              phase and task management, team collaboration with role-based permissions,
+              real-time chat channels for project discussions,
               and a statistics dashboard for project oversight.
             </p>
           </div>
@@ -368,10 +363,12 @@
           <h3>Languages</h3>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">TypeScript</span>
             <span class="skill-tag">SQL</span>
-            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">Java</span>
           </div>
         </div>
         <div class="skill-category">
@@ -400,17 +397,21 @@
           <h3>Databases</h3>
           <div class="skill-tags">
             <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
             <span class="skill-tag">Meilisearch</span>
             <span class="skill-tag">Redis</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>AI / LLM</h3>
+          <h3>ML / AI</h3>
           <div class="skill-tags">
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">HuggingFace</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Transformers</span>
             <span class="skill-tag">LLM Integration</span>
-            <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">Groq API</span>
-            <span class="skill-tag">Structured Outputs</span>
             <span class="skill-tag">Agent Systems</span>
           </div>
         </div>
@@ -418,20 +419,23 @@
           <h3>DevOps & Tools</h3>
           <div class="skill-tags">
             <span class="skill-tag">Docker</span>
+            <span class="skill-tag">AWS</span>
             <span class="skill-tag">GitHub Actions</span>
             <span class="skill-tag">CI/CD</span>
             <span class="skill-tag">Playwright</span>
             <span class="skill-tag">pytest</span>
             <span class="skill-tag">Git</span>
+            <span class="skill-tag">Jupyter</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>APIs & Integrations</h3>
+          <h3>Techniques</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Microsoft Graph</span>
-            <span class="skill-tag">Slack API</span>
-            <span class="skill-tag">Jira API</span>
-            <span class="skill-tag">Gmail API</span>
+            <span class="skill-tag">Agentic Models</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Feedback Learning</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">Agile</span>
           </div>
         </div>
       </div>

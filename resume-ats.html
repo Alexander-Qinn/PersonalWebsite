@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Qin - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.25;
+      color: #000000;
+      background: #ffffff;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.4in;
+    }
+
+    h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      margin-bottom: 3pt;
+      text-align: center;
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 9pt;
+      margin-bottom: 10pt;
+      line-height: 1.2;
+    }
+
+    .contact-info a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1.5pt solid #000000;
+      margin-top: 8pt;
+      margin-bottom: 5pt;
+      padding-bottom: 1pt;
+    }
+
+    .section {
+      margin-bottom: 8pt;
+    }
+
+    .entry {
+      margin-bottom: 6pt;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1pt;
+    }
+
+    .entry-title {
+      font-weight: bold;
+      font-size: 9.5pt;
+    }
+
+    .entry-date {
+      font-size: 9pt;
+      font-style: italic;
+    }
+
+    .entry-subtitle {
+      font-size: 9pt;
+      font-style: italic;
+      margin-bottom: 2pt;
+    }
+
+    ul {
+      margin-left: 16pt;
+      margin-top: 2pt;
+    }
+
+    li {
+      margin-bottom: 1pt;
+      font-size: 9pt;
+    }
+
+    .skills-entry {
+      margin-bottom: 3pt;
+      font-size: 9pt;
+    }
+
+    .skills-label {
+      font-weight: bold;
+      display: inline;
+    }
+
+    .skills-content {
+      display: inline;
+    }
+
+    .download-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+
+    .download-btn:hover {
+      background: #4338ca;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: 9pt;
+      }
+
+      .download-btn {
+        display: none !important;
+      }
+
+      @page {
+        margin: 0.4in 0.5in;
+        size: letter;
+      }
+      
+      h2 {
+        page-break-after: avoid;
+      }
+      
+      .entry {
+        page-break-inside: avoid;
+      }
+    }
+
+    @media screen {
+      body {
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        margin: 40px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="download-btn" onclick="window.print()">Download PDF</button>
+
+  <h1>Alexander Qin</h1>
+  
+  <div class="contact-info">
+    <div>AlexanderQCSE@gmail.com | 732-737-5871 | Princeton Junction, NJ</div>
+    <div><a href="https://github.com/Alexander-Qinn">github.com/Alexander-Qinn</a></div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">University of California, San Diego</span>
+        <span class="entry-date">Sep 2021 - Jun 2025</span>
+      </div>
+      <div class="entry-subtitle">Bachelor of Science in Computer Science and Mathematics</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-entry">
+      <span class="skills-label">Languages:</span>
+      <span class="skills-content">Python, C++, JavaScript, TypeScript, SQL, R, Java, HTML/CSS</span>
+    </div>
+    <div class="skills-entry">
+      <span class="skills-label">Frameworks:</span>
+      <span class="skills-content">Flask, React, Svelte, TensorFlow, PyTorch, Scikit-Learn, HuggingFace</span>
+    </div>
+    <div class="skills-entry">
+      <span class="skills-label">Tools:</span>
+      <span class="skills-content">Docker, AWS, Git, PostgreSQL, MongoDB, Redis, Meilisearch, Celery, SQLAlchemy</span>
+    </div>
+    <div class="skills-entry">
+      <span class="skills-label">Techniques:</span>
+      <span class="skills-content">NLP, Transformers, LLM Integration, Agile, CI/CD, E2E Testing, Unit Testing</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Full-Stack Software Engineer - Opaida AI</span>
+        <span class="entry-date">Oct 2024 - Present</span>
+      </div>
+      <ul>
+        <li>Designed unified inbox system aggregating multiple platforms with AI-powered classification and real-time updates serving 10K+ messages</li>
+        <li>Built sorting, filtering, and two-level caching achieving 60% faster load times; integrated Meilisearch for smart search</li>
+        <li>Established E2E testing with Playwright, Docker, and CI/CD pipelines reducing bugs by 40% across 103K+ lines of code</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Human-Computer Interaction Researcher - UC San Diego</span>
+        <span class="entry-date">Jan 2025 - Sep 2025</span>
+      </div>
+      <ul>
+        <li>Designed qualitative analytics and visualization frameworks extracting insights from 12 scientist interviews on AI-human interaction</li>
+        <li>Identified key usability challenges in LLM interfaces to inform next-generation AI system design</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Data Analyst Intern - SkyIT</span>
+        <span class="entry-date">Sep 2023 - Dec 2023</span>
+      </div>
+      <ul>
+        <li>Analyzed fleet fuel usage and financial data, identifying $50K+ in annual cost savings opportunities</li>
+        <li>Developed predictive algorithms improving forecasting accuracy by 25%; automated reporting pipelines reducing manual work by 70%</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Quantitative Data Analyst Intern - Hua An Fund Management</span>
+        <span class="entry-date">Jun 2023 - Sep 2023</span>
+      </div>
+      <ul>
+        <li>Developed Alpha trading models using Sharpe ratio metrics, improving portfolio returns by 12%</li>
+        <li>Built multi-alpha backtesting system evaluating 50+ strategies; implemented volatility index achieving 0.73 correlation coefficient</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Real Estate Construction Planner</span>
+      </div>
+      <ul>
+        <li>Built full-stack web app for construction planning with task dependencies, approval workflows, and LLM-powered AI assistant</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Jira Clone Application</span>
+      </div>
+      <ul>
+        <li>Developed project management platform with timeline tracking, role-based access control, and real-time chat supporting 50+ concurrent users</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Notes Summarization Model</span>
+      </div>
+      <ul>
+        <li>Developed transformer-based summarization model achieving 85% ROUGE-L score with TensorFlow and HuggingFace</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

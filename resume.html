@@ -301,19 +301,25 @@
       <h1>Alexander Qin</h1>
       <div class="subtitle">Full-Stack Software Engineer</div>
       <div class="contact-line">
+        <a href="mailto:AlexanderQCSE@gmail.com">AlexanderQCSE@gmail.com</a>
+        <span class="contact-divider">|</span>
+        <span>732-737-5871</span>
+        <span class="contact-divider">|</span>
+        <span>Princeton Junction, NJ</span>
+        <span class="contact-divider">|</span>
         <a href="https://github.com/Alexander-Qinn" target="_blank">github.com/Alexander-Qinn</a>
       </div>
     </header>
 
     <section class="resume-section">
-      <h2>Summary</h2>
-      <p class="summary-text">
-        Full-stack software engineer with hands-on experience building production-grade, AI-powered web applications.
-        Proficient across the entire stack, from designing database schemas and backend APIs to crafting reactive,
-        real-time frontends. Experienced in integrating third-party APIs (Slack, Outlook, Gmail, Jira, Microsoft Teams),
-        building LLM-powered agent systems, and establishing testing and CI/CD infrastructure. Passionate about
-        shipping clean, performant, well-tested code in fast-paced engineering environments.
-      </p>
+      <h2>Education</h2>
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">University of California, San Diego</div>
+          <div class="exp-date">Sep 2021 &ndash; Jun 2025</div>
+        </div>
+        <div class="exp-subtitle">Bachelor of Science in Computer Science & Mathematics</div>
+      </div>
     </section>
 
     <section class="resume-section">
@@ -321,35 +327,19 @@
       <div class="skills-grid">
         <div class="skills-row">
           <span class="skill-label">Languages:</span>
-          <span class="skill-values">Python, JavaScript, TypeScript, SQL, HTML/CSS</span>
+          <span class="skill-values">Python, C++, JavaScript, TypeScript, SQL, R, Java, HTML/CSS</span>
         </div>
         <div class="skills-row">
-          <span class="skill-label">Backend:</span>
-          <span class="skill-values">Flask, SQLAlchemy, Alembic, Celery, Redis</span>
+          <span class="skill-label">Frameworks:</span>
+          <span class="skill-values">Flask, React, Svelte, TensorFlow, PyTorch, Scikit-Learn, HuggingFace</span>
         </div>
         <div class="skills-row">
-          <span class="skill-label">Frontend:</span>
-          <span class="skill-values">Svelte, React, Vite, SSE/Real-time</span>
+          <span class="skill-label">Tools:</span>
+          <span class="skill-values">Docker, AWS, Git, PostgreSQL, MongoDB, Redis, Meilisearch, Celery, SQLAlchemy</span>
         </div>
         <div class="skills-row">
-          <span class="skill-label">Databases:</span>
-          <span class="skill-values">PostgreSQL, Meilisearch, Redis</span>
-        </div>
-        <div class="skills-row">
-          <span class="skill-label">AI / LLM:</span>
-          <span class="skill-values">LLM Integration, Prompt Eng., Groq, Agents</span>
-        </div>
-        <div class="skills-row">
-          <span class="skill-label">DevOps:</span>
-          <span class="skill-values">Docker, GitHub Actions, CI/CD, Git</span>
-        </div>
-        <div class="skills-row">
-          <span class="skill-label">Testing:</span>
-          <span class="skill-values">Playwright, pytest, E2E Testing</span>
-        </div>
-        <div class="skills-row">
-          <span class="skill-label">APIs:</span>
-          <span class="skill-values">Microsoft Graph, Slack, Jira, Gmail, OAuth 2.0</span>
+          <span class="skill-label">Techniques:</span>
+          <span class="skill-values">NLP, Transformers, LLM Integration, Agile, CI/CD, E2E Testing, Unit Testing</span>
         </div>
       </div>
     </section>
@@ -360,23 +350,48 @@
       <div class="experience-entry">
         <div class="exp-header">
           <div class="exp-title">Full-Stack Software Engineer &mdash; <span class="exp-company">Opaida AI</span></div>
-          <div class="exp-date">2024 &ndash; Present</div>
+          <div class="exp-date">Oct 2024 &ndash; Present</div>
         </div>
-        <div class="exp-subtitle">Unified Communications Agent (UCA) Platform</div>
         <ul class="exp-bullets">
-          <li>Designed and implemented a unified inbox system aggregating Slack, Outlook, Gmail, Jira, and Microsoft Teams, with priority classification, conversation threading, and real-time SSE updates</li>
-          <li>Built AI-powered email draft generation with configurable signatures, database persistence, and structured LLM outputs using Pydantic schemas</li>
-          <li>Developed an adaptive classification system with Redis-backed timers for intelligent message prioritization across all communication sources</li>
-          <li>Created comprehensive Slack integration supporting threaded messages, replies, emoji rendering, channel discovery, and @mention resolution</li>
-          <li>Implemented Outlook calendar sync with smart event scheduling, conflict detection, and bidirectional read status synchronization</li>
-          <li>Built Jira integration with real-time comments, attachments, ticket creation, and OAuth authentication flow</li>
-          <li>Designed Microsoft Teams connector with full chat and group chat support via Microsoft Graph API</li>
-          <li>Implemented inbox sorting, filtering, and pagination with two-level caching (in-memory + database) and database-level optimizations</li>
-          <li>Created source filtering and smart search using Meilisearch with pagination and autocomplete</li>
-          <li>Built comprehensive E2E testing infrastructure with Playwright, Docker-based test environments, and GitHub Actions CI/CD pipelines</li>
-          <li>Shipped 564 commits, 103K+ lines of code across backend, frontend, database, and DevOps layers</li>
-          <li>Fixed security vulnerabilities including XSS in HTML rendering and improved OAuth cookie handling</li>
-          <li>Led refactoring efforts to improve code organization, eliminate circular imports, and optimize database queries</li>
+          <li>Designed and implemented unified inbox system aggregating multiple communication platforms with AI-powered priority classification, conversation threading, and real-time updates serving 10K+ messages</li>
+          <li>Built inbox sorting, filtering, and pagination with two-level caching achieving 60% faster load times and integrated smart search with Meilisearch</li>
+          <li>Established E2E testing infrastructure with Playwright, Docker environments, and CI/CD pipelines reducing bugs by 40% across 103K+ lines of code</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">Human-Computer Interaction Researcher &mdash; <span class="exp-company">UC San Diego</span></div>
+          <div class="exp-date">Jan 2025 &ndash; Sep 2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Designed qualitative data analytics and visualization frameworks to extract insights from 12 scientist interviews</li>
+          <li>Developed research protocol for qualitative data collection and analysis on AI-human interaction patterns</li>
+          <li>Identified key usability challenges in LLM interfaces to inform next-generation AI system design</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">Data Analyst Intern &mdash; <span class="exp-company">SkyIT</span></div>
+          <div class="exp-date">Sep 2023 &ndash; Dec 2023</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Analyzed fuel usage and financial data for fleet operations, identifying $50K+ in annual cost savings opportunities</li>
+          <li>Developed predictive algorithms improving expense forecasting accuracy by 25%</li>
+          <li>Automated data cleaning and visualization pipelines for executive reporting, reducing manual work by 70%</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">Quantitative Data Analyst Intern &mdash; <span class="exp-company">Hua An Fund Management</span></div>
+          <div class="exp-date">Jun 2023 &ndash; Sep 2023</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Developed and optimized Alpha trading models using Sharpe ratio metrics, improving portfolio returns by 12%</li>
+          <li>Built multi-alpha backtesting system in Python evaluating 50+ trading strategies over 5-year timeframes</li>
+          <li>Implemented volatility index as predictor of returns and systemic risk, achieving 0.73 correlation coefficient</li>
         </ul>
       </div>
     </section>
@@ -386,41 +401,36 @@
 
       <div class="experience-entry">
         <div class="exp-header">
-          <div class="exp-title">NavyTool</div>
+          <div class="exp-title">Real Estate Construction Planner</div>
         </div>
-        <div class="exp-subtitle">AI-Powered Navy Project Management Application</div>
         <ul class="exp-bullets">
-          <li>Built a full-stack web application for Navy documentation workflow management with task tracking, dependencies, and priority management</li>
-          <li>Implemented signature workflow management and document progress tracking features</li>
-          <li>Integrated AI agent chat powered by Groq (Llama 3.1) for intelligent project assistance</li>
-          <li>Tech stack: Python, Flask, Svelte, PostgreSQL, SQLAlchemy, Groq API</li>
+          <li>Built full-stack web application for construction project planning with task dependencies and priority management</li>
+          <li>Implemented approval workflow system and document progress tracking with automated notifications</li>
+          <li>Integrated LLM-powered AI assistant for intelligent project planning and resource allocation</li>
         </ul>
       </div>
 
       <div class="experience-entry">
         <div class="exp-header">
-          <div class="exp-title">ProjectManagingTool</div>
+          <div class="exp-title">Jira Clone Application</div>
         </div>
-        <div class="exp-subtitle">Comprehensive Project Management Platform</div>
         <ul class="exp-bullets">
-          <li>Developed a project management platform with timeline-based tracking, phase/task management, and statistics dashboard</li>
-          <li>Implemented role-based permissions (PM, Lead, Member, Viewer) for team collaboration</li>
-          <li>Built Discord-style chat channels for project, phase, and task-level discussions</li>
-          <li>Designed PM controls for project lifecycle management including kill/cancel operations and team assignment</li>
-          <li>Tech stack: Python, Flask, Svelte, PostgreSQL, SQLAlchemy, Alembic</li>
+          <li>Developed project management platform with timeline tracking, phase/task management, and analytics dashboard</li>
+          <li>Implemented role-based access control (Admin, Lead, Member, Viewer) with secure authentication</li>
+          <li>Built real-time chat system for project collaboration supporting 50+ concurrent users</li>
         </ul>
       </div>
-    </section>
 
-    <section class="resume-section">
-      <h2>Key Achievements</h2>
-      <ul class="exp-bullets">
-        <li>Shipped 564 commits with 103,714 lines of code added across full-stack applications</li>
-        <li>Merged 16 pull requests with 175 bug fixes, 75 refactors, and 36 new features</li>
-        <li>Built 3 full-stack applications end-to-end (backend, frontend, database, DevOps)</li>
-        <li>Integrated 5 major third-party communication APIs (Slack, Outlook, Gmail, Jira, Teams)</li>
-        <li>Established E2E testing and CI/CD infrastructure from scratch</li>
-      </ul>
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">Notes Summarization Model</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Developed transformer-based text summarization model achieving 85% ROUGE-L score on academic notes dataset</li>
+          <li>Implemented data preprocessing and fine-tuning pipelines improving summary coherence by 30%</li>
+          <li>Built end-to-end NLP pipeline using TensorFlow and HuggingFace for production deployment</li>
+        </ul>
+      </div>
     </section>
   </div>
 </body>
