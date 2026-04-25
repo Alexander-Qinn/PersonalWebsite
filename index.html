@@ -37,26 +37,26 @@
         Hi, I'm <span class="gradient-text">Alexander Qin</span>
       </h1>
       <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
-        I build robust, scalable full-stack applications with a focus on
-        AI-powered platforms, real-time communication systems, and
-        elegant user experiences.
+        I build robust, scalable full-stack applications across AI-powered
+        platforms, real-time communications, multilingual voice agents, and
+        production-hardened backend infrastructure.
       </p>
       <div class="hero-stats" data-animate="fade-up" data-delay="300">
         <div class="stat">
-          <span class="stat-number" data-count="564">0</span>
-          <span class="stat-label">Commits</span>
+          <span class="stat-number" data-count="6">0</span>
+          <span class="stat-label">Production Apps</span>
         </div>
         <div class="stat">
-          <span class="stat-number" data-count="103714">0</span>
-          <span class="stat-label">Lines Written</span>
+          <span class="stat-number" data-count="7">0</span>
+          <span class="stat-label">3rd-Party Integrations</span>
         </div>
         <div class="stat">
-          <span class="stat-number" data-count="3">0</span>
-          <span class="stat-label">Major Projects</span>
+          <span class="stat-number" data-count="2">0</span>
+          <span class="stat-label">Languages Supported</span>
         </div>
         <div class="stat">
-          <span class="stat-number" data-count="16">0</span>
-          <span class="stat-label">PRs Merged</span>
+          <span class="stat-number" data-count="4">0</span>
+          <span class="stat-label">LLM Agent Systems</span>
         </div>
       </div>
       <div class="hero-actions" data-animate="fade-up" data-delay="400">
@@ -107,21 +107,27 @@
       <div class="about-content" data-animate="fade-up" data-delay="100">
         <div class="about-text">
           <p>
-            I'm a full-stack software engineer with deep experience building production-grade
-            applications that integrate AI, real-time communication, and complex data pipelines.
-            My work spans the entire stack — from database schema design and backend APIs to
-            polished, interactive frontends.
+            I'm a full-stack software engineer with deep experience shipping production-grade
+            applications that integrate AI, real-time communication, multilingual voice
+            pipelines, and hardened backend infrastructure. My work spans the entire stack —
+            from database schema design and async background workers to polished,
+            reactive frontends.
           </p>
           <p>
-            I've contributed extensively to an AI chatting application at
-            <strong>Opaida AI</strong>, shipping features across multiple third-party integrations
-            and real-time communication systems. I've also independently built project management
-            tools with AI-powered assistants, timeline views, and team collaboration features.
+            At <strong>Opaida AI</strong> I've shipped features across six production
+            applications: a flagship AI unified communications platform with tool-calling
+            agents and task classification; a VC deal-flow platform with an agentic
+            slide-deck pipeline; an insurance advisor matching platform with LLM-driven
+            policy analysis; a multilingual legal lead-intake system with Twilio + Deepgram
+            voice and Clio CRM sync; a defense installation manager; and a
+            project/portfolio management tool.
           </p>
           <p>
-            I care deeply about code quality, performance, and delivering software that
-            genuinely solves problems. I write clean, well-typed, well-tested code and
-            thrive in fast-paced engineering environments.
+            Beyond features, I take ownership of <strong>production hardening</strong>:
+            Infisical secret management, Docker secrets and rotation timers, fail-fast
+            startup checks, CSRF and bcrypt auth, Redis-backed async workers, and CI/CD
+            pipelines with end-to-end Playwright tests. I write clean, well-typed,
+            well-tested code and thrive in fast-paced engineering environments.
           </p>
         </div>
         <div class="about-highlights">
@@ -159,26 +165,25 @@
       <div class="project-card featured" data-animate="fade-up" data-delay="100">
         <div class="project-header">
           <div class="project-label">Featured Project</div>
-          <h3>AI Chatting Application</h3>
+          <h3>AI Unified Communications Platform</h3>
         </div>
         <div class="project-body">
           <p>
-            An AI-powered unified communications platform that aggregates messages from
-            multiple enterprise sources into a single intelligent inbox.
-            Features include AI-generated email drafts, smart search,
-            priority classification, real-time SSE updates, conversation threading,
-            calendar management, and a full agent system with tool-calling capabilities.
+            An enterprise AI inbox that ingests email, Slack, and Microsoft Teams into a
+            single feed with task extraction, tool-calling agents, AI-drafted replies,
+            calendar sync, smart search, and real-time SSE updates. My deepest contribution
+            to date — full ownership across the backend, frontend, agent system, and
+            production infrastructure.
           </p>
           <div class="project-contributions">
             <h4>Key Contributions</h4>
             <ul>
-              <li>Built inbox sorting, filtering, and pagination with two-level caching</li>
-              <li>Implemented AI-powered email draft generation with configurable signatures</li>
-              <li>Created adaptive classification system with Redis-backed timers</li>
-              <li>Developed third-party integrations with threaded messages and real-time sync</li>
-              <li>Built calendar sync with conflict detection and event management</li>
-              <li>Created comprehensive E2E testing infrastructure with Playwright</li>
-              <li>Shipped 564 commits with 103K+ lines of code</li>
+              <li>Built inbox sorting, filtering, and pagination with two-level caching and reactive source filters</li>
+              <li>Designed task classification, due-date inference, reassignment, and timeline UI with linked-message previews</li>
+              <li>Replaced Celery with an async Redis-queue background worker, cutting infra footprint and tail latency</li>
+              <li>Shipped Microsoft Teams + Outlook connectors with quoted-history handling, calendar conflict detection, and resilient sync</li>
+              <li>Hardened security: Infisical secret injection, Docker-secret rotation timers, bcrypt + CSRF auth, fail-fast startup</li>
+              <li>Stood up Playwright E2E suite, verify-migrations CI, and pyinstrument profiling middleware</li>
             </ul>
           </div>
         </div>
@@ -188,12 +193,14 @@
           <span class="tech-tag">Svelte</span>
           <span class="tech-tag">PostgreSQL</span>
           <span class="tech-tag">Redis</span>
-          <span class="tech-tag">Celery</span>
           <span class="tech-tag">Meilisearch</span>
+          <span class="tech-tag">Qdrant</span>
           <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Infisical</span>
           <span class="tech-tag">Playwright</span>
           <span class="tech-tag">SSE</span>
           <span class="tech-tag">OAuth 2.0</span>
+          <span class="tech-tag">LLM Agents</span>
         </div>
       </div>
 
@@ -201,36 +208,65 @@
         <div class="project-card" data-animate="fade-up" data-delay="200">
           <div class="project-header">
             <div class="project-label">Full-Stack Application</div>
-            <h3>Real Estate Construction Planner</h3>
+            <h3>Insurance Advisor Match Platform</h3>
           </div>
           <div class="project-body">
             <p>
-              A specialized web application for real estate construction project planning with AI-assisted
-              workflows. Features include task tracking with dependencies and priorities,
-              approval workflow management, document progress tracking, and an AI agent
-              chat for intelligent assistance.
+              A bilingual (EN/ZH) marketplace connecting policy holders to licensed
+              advisors. Built multi-file LLM policy extraction with vision OCR for scanned
+              PDFs, a weighted P/F/E/T match-score engine, advisor verification with license
+              and E&amp;O expiration checks, comprehensive needs-analysis PDF reports, and
+              SSE-based lead notifications.
             </p>
           </div>
           <div class="project-tech">
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">FastAPI</span>
             <span class="tech-tag">Svelte</span>
             <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">LLM Integration</span>
+            <span class="tech-tag">Vision LLMs</span>
+            <span class="tech-tag">i18n</span>
+            <span class="tech-tag">SlowAPI</span>
           </div>
         </div>
 
         <div class="project-card" data-animate="fade-up" data-delay="300">
           <div class="project-header">
             <div class="project-label">Full-Stack Application</div>
-            <h3>Jira Clone Application</h3>
+            <h3>Multilingual Legal Lead-Intake System</h3>
           </div>
           <div class="project-body">
             <p>
-              A comprehensive project management platform featuring timeline-based tracking,
-              phase and task management, team collaboration with role-based permissions,
-              real-time chat channels for project discussions,
-              and a statistics dashboard for project oversight.
+              An end-to-end intake platform for a law firm: AI phone receptionist with
+              English and Mandarin speech-to-text, DTMF/voice dual capture, multi-matter
+              lead management, automatic CRM sync (contact, document, and matter
+              creation), pre-consultation PDF generation, and an iLead-branded staff
+              dashboard with appointments and analytics.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Svelte</span>
+            <span class="tech-tag">Twilio</span>
+            <span class="tech-tag">Deepgram</span>
+            <span class="tech-tag">Clio API</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-animate="fade-up" data-delay="400">
+          <div class="project-header">
+            <div class="project-label">Full-Stack Application</div>
+            <h3>Defense Installation Project Manager</h3>
+          </div>
+          <div class="project-body">
+            <p>
+              A project-management tool for federal installation workflows: lease and
+              signature tracking, deadline calendar with package downloads, document
+              upload pipeline with in-app PDF viewer, multi-installation switching,
+              SendGrid signature-request emails, and a Groq-powered AI assistant for
+              workflow Q&amp;A.
             </p>
           </div>
           <div class="project-tech">
@@ -238,8 +274,40 @@
             <span class="tech-tag">Flask</span>
             <span class="tech-tag">Svelte</span>
             <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">SQLAlchemy</span>
+            <span class="tech-tag">SendGrid</span>
+            <span class="tech-tag">Groq / Llama</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-animate="fade-up" data-delay="500">
+          <div class="project-header">
+            <div class="project-label">Full-Stack Application</div>
+            <h3>VC Deal-Flow Platform</h3>
+          </div>
+          <div class="project-body">
+            <p>
+              An end-to-end deal-tracking workspace for a venture capital firm: IC
+              submission and review workflow, project flagging with key-findings
+              extraction, risk metrics, and Cost vs Valuation modeling tied to
+              check-size matching. Built an agentic slide-deck pipeline that generates
+              PPTX corporate overviews and an LLM agent chat with persistent history,
+              tool registry, prompt-injection fences, and platform-data snapshot
+              context. Production architecture uses thin FastAPI routers, a service
+              layer, structured error envelopes, async SQLAlchemy 2 with Alembic batch
+              migrations, session-cookie auth with CSRF double-submit, and SlowAPI
+              rate limiting.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python 3.12</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">SvelteKit 2</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">TailwindCSS</span>
             <span class="tech-tag">Alembic</span>
+            <span class="tech-tag">Pydantic v2</span>
+            <span class="tech-tag">PPTX Pipeline</span>
+            <span class="tech-tag">Tool-Calling Agents</span>
           </div>
         </div>
       </div>
@@ -249,42 +317,49 @@
   <section class="contributions" id="contributions">
     <div class="section-inner">
       <h2 class="section-title" data-animate="fade-up">
-        <span class="section-number">03.</span> Contribution Breakdown
+        <span class="section-number">03.</span> What I've Built
       </h2>
       <div class="contrib-grid" data-animate="fade-up" data-delay="100">
         <div class="contrib-card">
           <div class="contrib-bar" data-width="100" style="--bar-color: #6366f1;"></div>
           <div class="contrib-info">
-            <span class="contrib-count">564</span>
-            <span class="contrib-label">Total Commits</span>
+            <span class="contrib-count">4</span>
+            <span class="contrib-label">LLM Agent Systems</span>
           </div>
         </div>
         <div class="contrib-card">
-          <div class="contrib-bar" data-width="31" style="--bar-color: #10b981;"></div>
+          <div class="contrib-bar" data-width="80" style="--bar-color: #10b981;"></div>
           <div class="contrib-info">
-            <span class="contrib-count">175</span>
-            <span class="contrib-label">Bug Fixes</span>
+            <span class="contrib-count">7+</span>
+            <span class="contrib-label">3rd-Party Integrations</span>
           </div>
         </div>
         <div class="contrib-card">
-          <div class="contrib-bar" data-width="13" style="--bar-color: #f59e0b;"></div>
+          <div class="contrib-bar" data-width="60" style="--bar-color: #f59e0b;"></div>
           <div class="contrib-info">
-            <span class="contrib-count">75</span>
-            <span class="contrib-label">Refactors</span>
+            <span class="contrib-count">2</span>
+            <span class="contrib-label">Voice / STT Pipelines</span>
           </div>
         </div>
         <div class="contrib-card">
-          <div class="contrib-bar" data-width="7" style="--bar-color: #ec4899;"></div>
+          <div class="contrib-bar" data-width="55" style="--bar-color: #ec4899;"></div>
           <div class="contrib-info">
-            <span class="contrib-count">36</span>
-            <span class="contrib-label">New Features</span>
+            <span class="contrib-count">2</span>
+            <span class="contrib-label">Document &amp; PDF Pipelines</span>
           </div>
         </div>
         <div class="contrib-card">
-          <div class="contrib-bar" data-width="3" style="--bar-color: #8b5cf6;"></div>
+          <div class="contrib-bar" data-width="70" style="--bar-color: #8b5cf6;"></div>
           <div class="contrib-info">
-            <span class="contrib-count">16</span>
-            <span class="contrib-label">PRs Merged</span>
+            <span class="contrib-count">6</span>
+            <span class="contrib-label">Production Deployments</span>
+          </div>
+        </div>
+        <div class="contrib-card">
+          <div class="contrib-bar" data-width="50" style="--bar-color: #ef4444;"></div>
+          <div class="contrib-info">
+            <span class="contrib-count">2</span>
+            <span class="contrib-label">Bilingual UI / STT (EN/ZH)</span>
           </div>
         </div>
       </div>
@@ -293,59 +368,66 @@
         <h3>Notable Contributions</h3>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-dot feat"></div>
+            <div class="timeline-dot refactor"></div>
             <div class="timeline-content">
-              <span class="timeline-type">Feature</span>
-              <p>Adaptive classification recheck system via Redis timers</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot feat"></div>
-            <div class="timeline-content">
-              <span class="timeline-type">Feature</span>
-              <p>Inbox pagination and sorting with two-level caching</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot feat"></div>
-            <div class="timeline-content">
-              <span class="timeline-type">Feature</span>
-              <p>AI-powered email draft generation with database persistence</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot feat"></div>
-            <div class="timeline-content">
-              <span class="timeline-type">Feature</span>
-              <p>Microsoft Teams connector with full chat and group support</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot feat"></div>
-            <div class="timeline-content">
-              <span class="timeline-type">Feature</span>
-              <p>Smart event scheduling with conflict detection and Outlook sync</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot feat"></div>
-            <div class="timeline-content">
-              <span class="timeline-type">Feature</span>
-              <p>Comprehensive E2E testing infrastructure with Playwright</p>
+              <span class="timeline-type">Architecture</span>
+              <p>Replaced Celery with an async Redis-queue background worker for lower latency and simpler ops</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot fix"></div>
             <div class="timeline-content">
               <span class="timeline-type">Security</span>
-              <p>Fixed XSS vulnerability in HTML rendering pipeline</p>
+              <p>Migrated infra credentials to Docker secrets with Infisical injection, rotation scripts, and systemd timers</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot fix"></div>
+            <div class="timeline-content">
+              <span class="timeline-type">Security</span>
+              <p>Hardened auth: bcrypt DB login, fail-fast required secrets, Slack CSRF, hardened session cookies</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot feat"></div>
+            <div class="timeline-content">
+              <span class="timeline-type">Feature</span>
+              <p>Task classification, due-date inference, reassignment flow, and timeline UI with linked-message preview</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot feat"></div>
+            <div class="timeline-content">
+              <span class="timeline-type">Feature</span>
+              <p>Microsoft Teams + Outlook connectors with quoted-history handling and resilient sync</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot feat"></div>
+            <div class="timeline-content">
+              <span class="timeline-type">Feature</span>
+              <p>Bilingual AI phone receptionist with English + Mandarin Deepgram STT and Twilio voice pipelines</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot feat"></div>
+            <div class="timeline-content">
+              <span class="timeline-type">Feature</span>
+              <p>Multi-file LLM policy extraction with vision OCR for scanned PDFs and weighted advisor matching</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot refactor"></div>
             <div class="timeline-content">
               <span class="timeline-type">Performance</span>
-              <p>Major performance optimizations for sync processes and inbox loading</p>
+              <p>Inbox pagination and sorting with two-level caching plus pyinstrument profiling middleware</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot feat"></div>
+            <div class="timeline-content">
+              <span class="timeline-type">Testing</span>
+              <p>E2E Playwright suite, automated UI tests, verify-migrations CI, backend test workflows</p>
             </div>
           </div>
         </div>
@@ -375,11 +457,14 @@
           <h3>Backend</h3>
           <div class="skill-tags">
             <span class="skill-tag">Flask</span>
-            <span class="skill-tag">SQLAlchemy</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">SQLAlchemy 2</span>
             <span class="skill-tag">Alembic</span>
+            <span class="skill-tag">Pydantic v2</span>
             <span class="skill-tag">Celery</span>
-            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Async Workers</span>
             <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">SSE</span>
             <span class="skill-tag">OAuth 2.0</span>
           </div>
         </div>
@@ -387,55 +472,73 @@
           <h3>Frontend</h3>
           <div class="skill-tags">
             <span class="skill-tag">Svelte</span>
+            <span class="skill-tag">SvelteKit</span>
             <span class="skill-tag">React</span>
+            <span class="skill-tag">TailwindCSS</span>
             <span class="skill-tag">Vite</span>
-            <span class="skill-tag">SSE / Real-time</span>
-            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Real-time UI</span>
+            <span class="skill-tag">i18n</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>Databases</h3>
+          <h3>Databases &amp; Search</h3>
           <div class="skill-tags">
             <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQLite</span>
             <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Meilisearch</span>
             <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Meilisearch</span>
+            <span class="skill-tag">Qdrant</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>ML / AI</h3>
+          <h3>AI / ML</h3>
           <div class="skill-tags">
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">Scikit-Learn</span>
-            <span class="skill-tag">HuggingFace</span>
-            <span class="skill-tag">NLP</span>
-            <span class="skill-tag">Transformers</span>
             <span class="skill-tag">LLM Integration</span>
-            <span class="skill-tag">Agent Systems</span>
+            <span class="skill-tag">Tool-Calling Agents</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Vision LLMs (OCR)</span>
+            <span class="skill-tag">HuggingFace</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Scikit-Learn</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>DevOps & Tools</h3>
+          <h3>Voice &amp; Integrations</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Twilio</span>
+            <span class="skill-tag">Deepgram</span>
+            <span class="skill-tag">Microsoft Graph</span>
+            <span class="skill-tag">Slack API</span>
+            <span class="skill-tag">SendGrid</span>
+            <span class="skill-tag">Clio API</span>
+            <span class="skill-tag">Stripe</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps &amp; Security</h3>
           <div class="skill-tags">
             <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Docker Compose</span>
             <span class="skill-tag">AWS</span>
             <span class="skill-tag">GitHub Actions</span>
             <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">Playwright</span>
-            <span class="skill-tag">pytest</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Infisical</span>
+            <span class="skill-tag">Secret Rotation</span>
+            <span class="skill-tag">bcrypt / CSRF</span>
+            <span class="skill-tag">SlowAPI</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>Techniques</h3>
+          <h3>Testing &amp; Tooling</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Agentic Models</span>
-            <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">Feedback Learning</span>
-            <span class="skill-tag">Unit Testing</span>
-            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Playwright</span>
+            <span class="skill-tag">pytest</span>
+            <span class="skill-tag">pyinstrument</span>
+            <span class="skill-tag">uv</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linear / Agile</span>
           </div>
         </div>
       </div>

@@ -327,19 +327,35 @@
       <div class="skills-grid">
         <div class="skills-row">
           <span class="skill-label">Languages:</span>
-          <span class="skill-values">Python, C++, JavaScript, TypeScript, SQL, R, Java, HTML/CSS</span>
+          <span class="skill-values">Python, TypeScript, JavaScript, SQL, C++, Java, R, HTML/CSS</span>
         </div>
         <div class="skills-row">
-          <span class="skill-label">Frameworks:</span>
-          <span class="skill-values">Flask, React, Svelte, TensorFlow, PyTorch, Scikit-Learn, HuggingFace</span>
+          <span class="skill-label">Backend:</span>
+          <span class="skill-values">Flask, FastAPI, SQLAlchemy 2, Alembic, Pydantic, Celery, async Redis workers, OAuth 2.0</span>
         </div>
         <div class="skills-row">
-          <span class="skill-label">Tools:</span>
-          <span class="skill-values">Docker, AWS, Git, PostgreSQL, MongoDB, Redis, Meilisearch, Celery, SQLAlchemy</span>
+          <span class="skill-label">Frontend:</span>
+          <span class="skill-values">Svelte, SvelteKit, React, Vite, TailwindCSS, SSE / real-time UI, i18n</span>
         </div>
         <div class="skills-row">
-          <span class="skill-label">Techniques:</span>
-          <span class="skill-values">NLP, Transformers, LLM Integration, Agile, CI/CD, E2E Testing, Unit Testing</span>
+          <span class="skill-label">Data &amp; Search:</span>
+          <span class="skill-values">PostgreSQL, SQLite, MongoDB, Redis, Meilisearch, Qdrant</span>
+        </div>
+        <div class="skills-row">
+          <span class="skill-label">AI / ML:</span>
+          <span class="skill-values">LLM integration, tool-calling agents, prompt engineering, vision LLM OCR, HuggingFace, PyTorch, TensorFlow</span>
+        </div>
+        <div class="skills-row">
+          <span class="skill-label">Integrations:</span>
+          <span class="skill-values">Twilio, Deepgram, Microsoft Graph, Slack API, SendGrid, Clio, Stripe</span>
+        </div>
+        <div class="skills-row">
+          <span class="skill-label">DevOps:</span>
+          <span class="skill-values">Docker, Docker Compose, AWS, GitHub Actions, CI/CD, Infisical, secret rotation, bcrypt, CSRF, SlowAPI</span>
+        </div>
+        <div class="skills-row">
+          <span class="skill-label">Testing &amp; Tools:</span>
+          <span class="skill-values">Playwright, pytest, pyinstrument, uv, Git, Linear, Agile</span>
         </div>
       </div>
     </section>
@@ -353,9 +369,11 @@
           <div class="exp-date">Oct 2025 &ndash; Present</div>
         </div>
         <ul class="exp-bullets">
-          <li>Designed and implemented unified inbox system aggregating multiple communication platforms with AI-powered priority classification, conversation threading, and real-time updates serving 10K+ messages</li>
-          <li>Built inbox sorting, filtering, and pagination with two-level caching achieving 60% faster load times and integrated smart search with Meilisearch</li>
-          <li>Established E2E testing infrastructure with Playwright, Docker environments, and CI/CD pipelines reducing bugs by 40% across 103K+ lines of code</li>
+          <li>Designed and shipped features across <strong>6 production applications</strong> spanning AI communications, multilingual voice agents, insurance matching, VC deal flow, and federal project workflows</li>
+          <li>Built the flagship <strong>AI unified communications platform</strong>: aggregated Email, Slack, and Microsoft Teams into a single inbox with <strong>tool-calling LLM agents</strong>, AI-drafted replies, automated task classification with due-date inference, conversation threading, two-level caching, Meilisearch full-text search, and SSE-based real-time updates</li>
+          <li>Built and shipped <strong>7+ third-party integrations</strong> (Slack, Microsoft Graph, Outlook, Twilio, Deepgram, Clio, SendGrid) including OAuth 2.0 flows, webhook ingestion, threaded conversation sync, calendar conflict detection, and resilient retry pipelines</li>
+          <li>Built a bilingual <strong>English/Mandarin AI phone receptionist</strong> (Twilio + Deepgram) with DTMF/voice dual capture and multi-matter lead linking, plus a <strong>multi-file LLM policy-extraction pipeline</strong> with vision OCR for scanned PDFs feeding a weighted advisor matching engine</li>
+          <li>Owned production hardening and developer experience: replaced Celery with an async Redis-queue worker, migrated credentials to Docker secrets with Infisical injection, hardened auth (bcrypt, Slack CSRF, locked-down sessions), and stood up Playwright E2E, verify-migrations CI, and pyinstrument profiling middleware</li>
         </ul>
       </div>
 
@@ -365,9 +383,8 @@
           <div class="exp-date">Jan 2025 &ndash; Sep 2025</div>
         </div>
         <ul class="exp-bullets">
-          <li>Designed qualitative data analytics and visualization frameworks to extract insights from 12 scientist interviews</li>
-          <li>Developed research protocol for qualitative data collection and analysis on AI-human interaction patterns</li>
-          <li>Identified key usability challenges in LLM interfaces to inform next-generation AI system design</li>
+          <li>Designed qualitative data analytics and visualization frameworks extracting insights from 12 scientist interviews on AI-human interaction patterns</li>
+          <li>Authored research protocol for qualitative collection and analysis, identifying key usability challenges in LLM interfaces to inform next-generation system design</li>
         </ul>
       </div>
 
@@ -377,9 +394,8 @@
           <div class="exp-date">Sep 2023 &ndash; Dec 2023</div>
         </div>
         <ul class="exp-bullets">
-          <li>Analyzed fuel usage and financial data for fleet operations, identifying $50K+ in annual cost savings opportunities</li>
-          <li>Developed predictive algorithms improving expense forecasting accuracy by 25%</li>
-          <li>Automated data cleaning and visualization pipelines for executive reporting, reducing manual work by 70%</li>
+          <li>Analyzed fleet fuel and financial data, identifying <strong>$50K+ in annual cost-savings</strong> opportunities for executive leadership</li>
+          <li>Built predictive expense-forecasting models improving accuracy by <strong>25%</strong> and automated data-cleaning and reporting pipelines reducing manual work by <strong>70%</strong></li>
         </ul>
       </div>
 
@@ -389,9 +405,8 @@
           <div class="exp-date">Jun 2023 &ndash; Sep 2023</div>
         </div>
         <ul class="exp-bullets">
-          <li>Developed and optimized Alpha trading models using Sharpe ratio metrics, improving portfolio returns by 12%</li>
-          <li>Built multi-alpha backtesting system in Python evaluating 50+ trading strategies over 5-year timeframes</li>
-          <li>Implemented volatility index as predictor of returns and systemic risk, achieving 0.73 correlation coefficient</li>
+          <li>Optimized Alpha trading models with Sharpe ratio metrics, improving portfolio returns by <strong>12%</strong></li>
+          <li>Built a Python multi-alpha backtester evaluating 50+ strategies over 5-year horizons; implemented a volatility index achieving 0.73 correlation with realized returns</li>
         </ul>
       </div>
     </section>
@@ -401,34 +416,57 @@
 
       <div class="experience-entry">
         <div class="exp-header">
-          <div class="exp-title">Real Estate Construction Planner</div>
+          <div class="exp-title">AI Unified Communications Platform</div>
+          <div class="exp-date">Python, Flask, Svelte, Postgres, Redis, Meilisearch</div>
         </div>
         <ul class="exp-bullets">
-          <li>Built full-stack web application for construction project planning with task dependencies and priority management</li>
-          <li>Implemented approval workflow system and document progress tracking with automated notifications</li>
-          <li>Integrated LLM-powered AI assistant for intelligent project planning and resource allocation</li>
+          <li>Enterprise AI inbox unifying Email, Slack, and Teams with task classification, tool-calling agents, AI drafts, and SSE updates</li>
+          <li>Led the architecture migration from Celery to an async Redis-queue worker, plus inbox pagination/sorting with two-level caching</li>
         </ul>
       </div>
 
       <div class="experience-entry">
         <div class="exp-header">
-          <div class="exp-title">Jira Clone Application</div>
+          <div class="exp-title">Multilingual Legal Lead-Intake System</div>
+          <div class="exp-date">FastAPI, Svelte, Twilio, Deepgram, Clio</div>
         </div>
         <ul class="exp-bullets">
-          <li>Developed project management platform with timeline tracking, phase/task management, and analytics dashboard</li>
-          <li>Implemented role-based access control (Admin, Lead, Member, Viewer) with secure authentication</li>
-          <li>Built real-time chat system for project collaboration supporting 50+ concurrent users</li>
+          <li>End-to-end intake platform with bilingual (EN/ZH) AI phone receptionist, dual DTMF/voice capture, and multi-matter lead lifecycle</li>
+          <li>Automatic Clio CRM sync of contacts, documents, and matters; pre-consultation PDF generation; staff dashboard with appointments and analytics</li>
         </ul>
       </div>
 
       <div class="experience-entry">
         <div class="exp-header">
-          <div class="exp-title">Notes Summarization Model</div>
+          <div class="exp-title">Insurance Advisor Match Platform</div>
+          <div class="exp-date">FastAPI, Svelte, Postgres, Vision LLMs</div>
         </div>
         <ul class="exp-bullets">
-          <li>Developed transformer-based text summarization model achieving 85% ROUGE-L score on academic notes dataset</li>
-          <li>Implemented data preprocessing and fine-tuning pipelines improving summary coherence by 30%</li>
-          <li>Built end-to-end NLP pipeline using TensorFlow and HuggingFace for production deployment</li>
+          <li>Bilingual marketplace with multi-file LLM policy extraction (vision OCR for scanned PDFs) and a weighted P/F/E/T advisor matching engine</li>
+          <li>Advisor verification with license + E&amp;O expiration checks, comprehensive needs-analysis PDF reports, and SSE-based lead notifications</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">VC Deal-Flow Platform</div>
+          <div class="exp-date">SvelteKit 2, FastAPI, Python 3.12, Postgres</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>End-to-end deal-tracking workspace with Investment Committee submission and review workflow, project flagging, key-findings extraction, risk metrics, and Cost vs Valuation modeling tied to check-size matching</li>
+          <li>Built an <strong>agentic slide-deck pipeline</strong> generating PPTX corporate overviews and an <strong>LLM agent chat</strong> with persistent history, tool registry, prompt-injection fences, and platform-data snapshot context</li>
+          <li>Hardened production architecture: thin FastAPI routers + service layer, structured error envelope, Alembic batch migrations, session-cookie auth with CSRF double-submit, bcrypt, and SlowAPI rate limiting</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <div class="exp-header">
+          <div class="exp-title">Defense Installation Project Manager</div>
+          <div class="exp-date">Flask, Svelte, Postgres, SendGrid, Groq</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Federal installation project tracker with lease/signature workflows, deadline calendar with package downloads, and in-app PDF viewer</li>
+          <li>Multi-installation switching, SendGrid signature-request emails, and a Groq-powered AI assistant for workflow Q&amp;A</li>
         </ul>
       </div>
     </section>

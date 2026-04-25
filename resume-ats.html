@@ -5,168 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexander Qin - Resume</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Arial', 'Helvetica', sans-serif;
-      font-size: 9.5pt;
-      line-height: 1.25;
+      font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+      font-size: 9pt;
+      line-height: 1.18;
       color: #000000;
       background: #ffffff;
       max-width: 8.5in;
       margin: 0 auto;
-      padding: 0.4in;
+      padding: 0.35in 0.45in;
     }
 
     h1 {
-      font-size: 18pt;
+      font-size: 17pt;
       font-weight: bold;
-      margin-bottom: 3pt;
+      margin-bottom: 1pt;
       text-align: center;
+      letter-spacing: 0.5pt;
     }
 
     .contact-info {
       text-align: center;
-      font-size: 9pt;
-      margin-bottom: 10pt;
+      font-size: 8.5pt;
+      margin-bottom: 4pt;
       line-height: 1.2;
     }
 
-    .contact-info a {
-      color: #000000;
-      text-decoration: none;
-    }
+    .contact-info a { color: #000000; text-decoration: none; }
 
     h2 {
-      font-size: 10.5pt;
+      font-size: 10pt;
       font-weight: bold;
       text-transform: uppercase;
-      border-bottom: 1.5pt solid #000000;
-      margin-top: 8pt;
-      margin-bottom: 5pt;
-      padding-bottom: 1pt;
+      border-bottom: 1pt solid #000000;
+      margin-top: 4pt;
+      margin-bottom: 2pt;
+      padding-bottom: 0.5pt;
+      letter-spacing: 0.5pt;
     }
 
-    .section {
-      margin-bottom: 8pt;
-    }
-
-    .entry {
-      margin-bottom: 6pt;
-    }
+    .section { margin-bottom: 2pt; }
+    .entry { margin-bottom: 3pt; }
 
     .entry-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 1pt;
+      margin-bottom: 0;
     }
 
-    .entry-title {
-      font-weight: bold;
-      font-size: 9.5pt;
-    }
-
-    .entry-date {
-      font-size: 9pt;
-      font-style: italic;
-    }
-
-    .entry-subtitle {
-      font-size: 9pt;
-      font-style: italic;
-      margin-bottom: 2pt;
-    }
+    .entry-title { font-weight: bold; font-size: 9pt; }
+    .entry-date { font-size: 8.5pt; }
+    .entry-subtitle { font-size: 8.5pt; font-style: italic; margin-bottom: 0; }
 
     ul {
-      margin-left: 16pt;
-      margin-top: 2pt;
+      margin-left: 14pt;
+      margin-top: 0;
+      margin-bottom: 1pt;
+      list-style-type: disc;
     }
 
     li {
-      margin-bottom: 1pt;
-      font-size: 9pt;
+      margin-bottom: 0.5pt;
+      font-size: 8.5pt;
+      line-height: 1.2;
     }
 
-    .skills-entry {
-      margin-bottom: 3pt;
-      font-size: 9pt;
-    }
-
-    .skills-label {
-      font-weight: bold;
-      display: inline;
-    }
-
-    .skills-content {
-      display: inline;
-    }
+    .skills-entry { margin-bottom: 0.5pt; font-size: 8.5pt; line-height: 1.25; }
+    .skills-label { font-weight: bold; }
 
     .download-btn {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 16px;
+      right: 16px;
       background: #4f46e5;
       color: white;
       border: none;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border-radius: 6px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       z-index: 1000;
     }
-
-    .download-btn:hover {
-      background: #4338ca;
+    .download-btn:hover { background: #4338ca; }
+    .back-btn {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      background: #ffffff;
+      color: #4f46e5;
+      border: 1px solid #4f46e5;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 1000;
     }
 
     @media print {
-      body {
-        padding: 0;
-        margin: 0;
-        font-size: 9pt;
-      }
-
-      .download-btn {
-        display: none !important;
-      }
-
-      @page {
-        margin: 0.4in 0.5in;
-        size: letter;
-      }
-      
-      h2 {
-        page-break-after: avoid;
-      }
-      
-      .entry {
-        page-break-inside: avoid;
-      }
+      body { padding: 0; margin: 0; font-size: 9.5pt; }
+      .download-btn, .back-btn { display: none !important; }
+      @page { margin: 0.4in 0.5in; size: letter; }
+      h2 { page-break-after: avoid; }
+      .entry { page-break-inside: avoid; }
     }
 
     @media screen {
-      body {
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        margin: 40px auto;
-      }
+      body { box-shadow: 0 0 20px rgba(0,0,0,0.1); margin: 40px auto; }
     }
   </style>
 </head>
 <body>
+  <a href="index.html" class="back-btn">Back to Portfolio</a>
   <button class="download-btn" onclick="window.print()">Download PDF</button>
 
   <h1>Alexander Qin</h1>
-  
+
   <div class="contact-info">
-    <div>AlexanderQCSE@gmail.com | 732-737-5871 | Princeton Junction, NJ</div>
-    <div><a href="https://github.com/Alexander-Qinn">github.com/Alexander-Qinn</a></div>
+    AlexanderQCSE@gmail.com | 732-737-5871 | Princeton Junction, NJ | github.com/Alexander-Qinn
   </div>
 
   <div class="section">
@@ -182,22 +144,14 @@
 
   <div class="section">
     <h2>Technical Skills</h2>
-    <div class="skills-entry">
-      <span class="skills-label">Languages:</span>
-      <span class="skills-content">Python, C++, JavaScript, TypeScript, SQL, R, Java, HTML/CSS</span>
-    </div>
-    <div class="skills-entry">
-      <span class="skills-label">Frameworks:</span>
-      <span class="skills-content">Flask, React, Svelte, TensorFlow, PyTorch, Scikit-Learn, HuggingFace</span>
-    </div>
-    <div class="skills-entry">
-      <span class="skills-label">Tools:</span>
-      <span class="skills-content">Docker, AWS, Git, PostgreSQL, MongoDB, Redis, Meilisearch, Celery, SQLAlchemy</span>
-    </div>
-    <div class="skills-entry">
-      <span class="skills-label">Techniques:</span>
-      <span class="skills-content">NLP, Transformers, LLM Integration, Agile, CI/CD, E2E Testing, Unit Testing</span>
-    </div>
+    <div class="skills-entry"><span class="skills-label">Languages:</span> Python, TypeScript, JavaScript, SQL, C++, Java, R, HTML, CSS</div>
+    <div class="skills-entry"><span class="skills-label">Backend:</span> Flask, FastAPI, SQLAlchemy, Alembic, Pydantic, Celery, Async Workers, REST APIs, OAuth 2.0, SSE</div>
+    <div class="skills-entry"><span class="skills-label">Frontend:</span> Svelte, SvelteKit, React, Vite, TailwindCSS, real-time UI, internationalization (i18n)</div>
+    <div class="skills-entry"><span class="skills-label">Data and Search:</span> PostgreSQL, SQLite, MongoDB, Redis, Meilisearch, Qdrant</div>
+    <div class="skills-entry"><span class="skills-label">AI and ML:</span> LLM integration, tool-calling agents, prompt engineering, vision LLM OCR, HuggingFace, PyTorch, TensorFlow, Scikit-Learn</div>
+    <div class="skills-entry"><span class="skills-label">Integrations:</span> Twilio, Deepgram, Microsoft Graph, Slack API, SendGrid, Clio, Stripe</div>
+    <div class="skills-entry"><span class="skills-label">DevOps and Security:</span> Docker, Docker Compose, AWS, GitHub Actions, CI/CD, Infisical, secret rotation, bcrypt, CSRF, SlowAPI rate limiting</div>
+    <div class="skills-entry"><span class="skills-label">Testing and Tools:</span> Playwright, pytest, pyinstrument, uv, Git, Linear, Agile</div>
   </div>
 
   <div class="section">
@@ -206,12 +160,14 @@
     <div class="entry">
       <div class="entry-header">
         <span class="entry-title">Full-Stack Software Engineer - Opaida AI</span>
-        <span class="entry-date">Oct 2024 - Present</span>
+        <span class="entry-date">Oct 2025 - Present</span>
       </div>
       <ul>
-        <li>Designed unified inbox system aggregating multiple platforms with AI-powered classification and real-time updates serving 10K+ messages</li>
-        <li>Built sorting, filtering, and two-level caching achieving 60% faster load times; integrated Meilisearch for smart search</li>
-        <li>Established E2E testing with Playwright, Docker, and CI/CD pipelines reducing bugs by 40% across 103K+ lines of code</li>
+        <li>Designed and shipped features across <strong>6 production applications</strong> spanning AI communications, multilingual voice agents, insurance matching, VC deal flow, and federal project workflows.</li>
+        <li>Built the flagship <strong>AI unified communications platform</strong>: aggregated Email, Slack, and Microsoft Teams into a single inbox with <strong>tool-calling LLM agents</strong>, AI-drafted replies, automated task classification with due-date inference, conversation threading, two-level caching, Meilisearch full-text search, and SSE-based real-time updates.</li>
+        <li>Built and shipped <strong>7+ third-party integrations</strong> (Slack, Microsoft Graph, Outlook, Twilio, Deepgram, Clio, SendGrid) including OAuth 2.0 flows, webhook ingestion, threaded conversation sync, calendar conflict detection, and resilient retry pipelines.</li>
+        <li>Built a bilingual <strong>English/Mandarin AI phone receptionist</strong> (Twilio + Deepgram) with DTMF/voice dual capture and multi-matter lead linking, plus a <strong>multi-file LLM policy-extraction pipeline</strong> with vision OCR for scanned PDFs feeding a weighted advisor matching engine.</li>
+        <li>Owned production hardening and developer experience: replaced Celery with an async Redis-queue worker, migrated credentials to Docker secrets with Infisical injection, hardened auth (bcrypt, Slack CSRF, locked-down sessions), and stood up Playwright E2E, verify-migrations CI, and pyinstrument profiling.</li>
       </ul>
     </div>
 
@@ -221,8 +177,8 @@
         <span class="entry-date">Jan 2025 - Sep 2025</span>
       </div>
       <ul>
-        <li>Designed qualitative analytics and visualization frameworks extracting insights from 12 scientist interviews on AI-human interaction</li>
-        <li>Identified key usability challenges in LLM interfaces to inform next-generation AI system design</li>
+        <li>Designed qualitative analytics and visualization frameworks extracting insights from 12 scientist interviews on AI-human interaction patterns.</li>
+        <li>Authored research protocol for qualitative collection and analysis, identifying key usability challenges in LLM interfaces to inform next-generation AI system design.</li>
       </ul>
     </div>
 
@@ -232,8 +188,8 @@
         <span class="entry-date">Sep 2023 - Dec 2023</span>
       </div>
       <ul>
-        <li>Analyzed fleet fuel usage and financial data, identifying $50K+ in annual cost savings opportunities</li>
-        <li>Developed predictive algorithms improving forecasting accuracy by 25%; automated reporting pipelines reducing manual work by 70%</li>
+        <li>Analyzed fleet fuel and financial data, identifying <strong>$50K+ in annual cost-savings</strong> opportunities for executive leadership.</li>
+        <li>Built predictive expense-forecasting models improving accuracy by <strong>25%</strong> and automated data-cleaning and reporting pipelines reducing manual work by <strong>70%</strong>.</li>
       </ul>
     </div>
 
@@ -243,39 +199,50 @@
         <span class="entry-date">Jun 2023 - Sep 2023</span>
       </div>
       <ul>
-        <li>Developed Alpha trading models using Sharpe ratio metrics, improving portfolio returns by 12%</li>
-        <li>Built multi-alpha backtesting system evaluating 50+ strategies; implemented volatility index achieving 0.73 correlation coefficient</li>
+        <li>Optimized Alpha trading models with Sharpe ratio metrics, improving portfolio returns by <strong>12%</strong>.</li>
+        <li>Built a Python multi-alpha backtester evaluating 50+ strategies over 5-year horizons; implemented a volatility index achieving 0.73 correlation with realized returns.</li>
       </ul>
     </div>
   </div>
 
   <div class="section">
     <h2>Projects</h2>
-
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Real Estate Construction Planner</span>
+        <span class="entry-title">VC Deal-Flow Platform</span>
+        <span class="entry-date">SvelteKit 2, FastAPI, Python 3.12, Postgres</span>
       </div>
       <ul>
-        <li>Built full-stack web app for construction planning with task dependencies, approval workflows, and LLM-powered AI assistant</li>
+        <li>End-to-end deal-tracking workspace with Investment Committee submission and review workflow, project flagging, key-findings extraction, risk metrics, and Cost vs Valuation modeling tied to check-size matching.</li>
+        <li>Built an <strong>agentic slide-deck pipeline</strong> generating PPTX corporate overviews and an <strong>LLM agent chat</strong> with persistent history, tool registry, prompt-injection fences, and platform-data snapshot context.</li>
+        <li>Hardened production architecture: thin FastAPI routers + service layer, structured error envelope, Alembic batch migrations, session-cookie auth with CSRF double-submit, bcrypt, and SlowAPI rate limiting.</li>
       </ul>
     </div>
-
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Jira Clone Application</span>
+        <span class="entry-title">AI Unified Communications Platform</span>
+        <span class="entry-date">Python, Flask, Svelte, Postgres, Redis, Meilisearch</span>
       </div>
       <ul>
-        <li>Developed project management platform with timeline tracking, role-based access control, and real-time chat supporting 50+ concurrent users</li>
+        <li>Enterprise AI inbox unifying Email, Slack, and Microsoft Teams with task classification, tool-calling agents, AI-drafted replies, two-level caching, and SSE real-time updates.</li>
       </ul>
     </div>
-
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Notes Summarization Model</span>
+        <span class="entry-title">Multilingual Legal Lead-Intake System</span>
+        <span class="entry-date">FastAPI, Svelte, Twilio, Deepgram, Clio</span>
       </div>
       <ul>
-        <li>Developed transformer-based summarization model achieving 85% ROUGE-L score with TensorFlow and HuggingFace</li>
+        <li>End-to-end intake with bilingual AI phone receptionist, multi-matter lead lifecycle, automatic CRM sync of contacts, documents, and matters; staff dashboard with appointments and analytics.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Insurance Advisor Match Platform</span>
+        <span class="entry-date">FastAPI, Svelte, Postgres, Vision LLMs</span>
+      </div>
+      <ul>
+        <li>Bilingual marketplace with multi-file LLM policy extraction (vision OCR for scanned PDFs), weighted advisor matching, license / E&amp;O verification, and PDF needs-analysis reports.</li>
       </ul>
     </div>
   </div>
